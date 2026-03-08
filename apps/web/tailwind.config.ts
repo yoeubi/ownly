@@ -9,22 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#1A1A1A",
+        primary: {
+          DEFAULT: "#1A1A1A",
+          light: "#4A4A4A",
+        },
         accent: {
           DEFAULT: "#E85D75",
           hover: "#D64D65",
         },
         "bg-warm": "#FDF8F3",
         "bg-section": "#F5EDE6",
-        gray: {
-          200: "#E5E5E5",
-          400: "#9E9E9E",
-          600: "#6B6B6B",
-          900: "#1A1A1A",
-        },
       },
       fontFamily: {
-        sans: ["var(--font-geist-sans)", "system-ui", "sans-serif"],
+        sans: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        display: ["Playfair Display", "Georgia", "serif"],
       },
     },
   },
